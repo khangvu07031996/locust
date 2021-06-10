@@ -6,5 +6,5 @@ class WebsiteUser(HttpUser):
     host = 'https://api.sungame.vn'
     @task
     def on_start(self):
-        self.client.get("/data/banners", name='GET data/banners')
+        self.client.post("/data/banners", name='POST data/banners')
 
